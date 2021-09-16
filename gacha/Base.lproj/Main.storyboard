@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gacha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-Nb-dh5">
+                                <rect key="frame" x="32.5" y="64" width="349" height="135.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-0m-TEa">
+                                <rect key="frame" x="0.0" y="266.5" width="414" height="363"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="363" id="Vnl-G7-smM"/>
+                                    <constraint firstAttribute="width" constant="414" id="kGv-8o-qG3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e6-4I-q39">
+                                <rect key="frame" x="116" y="704" width="182" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="ガチャを引く"/>
+                                <connections>
+                                    <action selector="lottery1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0j-ra-5ho"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMd-LC-ANo">
+                                <rect key="frame" x="168.5" y="782" width="77" height="30"/>
+                                <state key="normal" title="シェアする"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2D-0O-I3a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gacha" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-du-S2s">
+                                <rect key="frame" x="87" y="283" width="240" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-Jo-UMw">
+                                <rect key="frame" x="54" y="273" width="307" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="qbN-OF-jm1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Lz-0m-TEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dZ-jU-52P"/>
+                            <constraint firstItem="hbA-Jo-UMw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1k5-xt-HU0"/>
+                            <constraint firstItem="DMd-LC-ANo" firstAttribute="top" secondItem="5e6-4I-q39" secondAttribute="bottom" constant="30" id="2Z9-3c-Fac"/>
+                            <constraint firstItem="hbA-Jo-UMw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="31j-Il-zdr"/>
+                            <constraint firstItem="fC3-Nb-dh5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7ih-tE-4zU"/>
+                            <constraint firstItem="DMd-LC-ANo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B3Q-eC-i2O"/>
+                            <constraint firstItem="5Lz-0m-TEa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S1u-m5-I0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DMd-LC-ANo" secondAttribute="bottom" constant="50" id="S8l-i6-5TI"/>
+                            <constraint firstItem="fC3-Nb-dh5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zea-h0-Wdh"/>
+                            <constraint firstItem="5e6-4I-q39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fLu-RM-yoM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="capcelImageView" destination="hbA-Jo-UMw" id="PJ7-Cw-KHc"/>
+                        <outlet property="gachaImageView" destination="5Lz-0m-TEa" id="84s-YE-8Da"/>
+                        <outlet property="gachaStartImageView" destination="MTx-du-S2s" id="ATz-Nz-ZdO"/>
+                        <outlet property="lottery1Button" destination="5e6-4I-q39" id="oCv-ci-aPQ"/>
+                        <outlet property="shareButton" destination="DMd-LC-ANo" id="Bkg-57-QEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gacha" width="266.5" height="371"/>
+        <image name="title" width="349" height="135.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
