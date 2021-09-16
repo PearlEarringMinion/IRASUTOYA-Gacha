@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		3B780DF826BB63A5005F78B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B780DF626BB63A5005F78B9 /* Main.storyboard */; };
 		3B780DFA26BB63AA005F78B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B780DF926BB63AA005F78B9 /* Assets.xcassets */; };
 		3B780DFD26BB63AA005F78B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B780DFB26BB63AA005F78B9 /* LaunchScreen.storyboard */; };
+		3B780E0626BCFFF3005F78B9 /* capcelgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B780E0526BCFFF3005F78B9 /* capcelgif.gif */; };
+		3B780E3B26C00E9A005F78B9 /* capcelgif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3B780E3A26C00E9A005F78B9 /* capcelgif2.gif */; };
+		4CD0EE7213FCCDD0A14673ED /* Pods_gacha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB88D0FBFB5E0E468D3DF28 /* Pods_gacha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CB88D0FBFB5E0E468D3DF28 /* Pods_gacha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gacha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B780DED26BB63A5005F78B9 /* gacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B780DF026BB63A5005F78B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B780DF226BB63A5005F78B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		3B780DF926BB63AA005F78B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B780DFC26BB63AA005F78B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B780DFE26BB63AA005F78B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B780E0526BCFFF3005F78B9 /* capcelgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = capcelgif.gif; sourceTree = "<group>"; };
+		3B780E3A26C00E9A005F78B9 /* capcelgif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = capcelgif2.gif; sourceTree = "<group>"; };
+		72BEA1431577841F9FB036F1 /* Pods-gacha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gacha.debug.xcconfig"; path = "Target Support Files/Pods-gacha/Pods-gacha.debug.xcconfig"; sourceTree = "<group>"; };
+		B81CCA03B93C51948F5DA70A /* Pods-gacha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gacha.release.xcconfig"; path = "Target Support Files/Pods-gacha/Pods-gacha.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD0EE7213FCCDD0A14673ED /* Pods_gacha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				3B780DEF26BB63A5005F78B9 /* gacha */,
 				3B780DEE26BB63A5005F78B9 /* Products */,
+				4F7DBFFA22107A85AFE441FD /* Pods */,
+				82FF4962EF20F06CBC573756 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				3B780DF926BB63AA005F78B9 /* Assets.xcassets */,
 				3B780DFB26BB63AA005F78B9 /* LaunchScreen.storyboard */,
 				3B780DFE26BB63AA005F78B9 /* Info.plist */,
+				3B780E0526BCFFF3005F78B9 /* capcelgif.gif */,
+				3B780E3A26C00E9A005F78B9 /* capcelgif2.gif */,
 			);
 			path = gacha;
+			sourceTree = "<group>";
+		};
+		4F7DBFFA22107A85AFE441FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72BEA1431577841F9FB036F1 /* Pods-gacha.debug.xcconfig */,
+				B81CCA03B93C51948F5DA70A /* Pods-gacha.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82FF4962EF20F06CBC573756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB88D0FBFB5E0E468D3DF28 /* Pods_gacha.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B780E0126BB63AA005F78B9 /* Build configuration list for PBXNativeTarget "gacha" */;
 			buildPhases = (
+				511E6BB454E1967AEC754EEC /* [CP] Check Pods Manifest.lock */,
 				3B780DE926BB63A5005F78B9 /* Sources */,
 				3B780DEA26BB63A5005F78B9 /* Frameworks */,
 				3B780DEB26BB63A5005F78B9 /* Resources */,
+				B8D24F993049048131927094 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,13 +156,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B780E3B26C00E9A005F78B9 /* capcelgif2.gif in Resources */,
 				3B780DFD26BB63AA005F78B9 /* LaunchScreen.storyboard in Resources */,
 				3B780DFA26BB63AA005F78B9 /* Assets.xcassets in Resources */,
 				3B780DF826BB63A5005F78B9 /* Main.storyboard in Resources */,
+				3B780E0626BCFFF3005F78B9 /* capcelgif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511E6BB454E1967AEC754EEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gacha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D24F993049048131927094 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gacha/Pods-gacha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gacha/Pods-gacha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gacha/Pods-gacha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B780DE926BB63A5005F78B9 /* Sources */ = {
@@ -283,6 +359,7 @@
 		};
 		3B780E0226BB63AA005F78B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BEA1431577841F9FB036F1 /* Pods-gacha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		3B780E0326BB63AA005F78B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81CCA03B93C51948F5DA70A /* Pods-gacha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
