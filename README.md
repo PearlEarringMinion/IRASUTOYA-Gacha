@@ -17,5 +17,5 @@ Third: You get a irastration of IRASUTOYA at random.
 - swift 5
 - Xcode 12.3
 
-#License
+# License
 The source code is licensed MIT.
