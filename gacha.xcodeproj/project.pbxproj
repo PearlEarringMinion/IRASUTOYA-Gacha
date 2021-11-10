@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B75E37A2706AC8800C6FD3A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B75E3792706AC8800C6FD3A /* CollectionViewController.swift */; };
 		3B780DF126BB63A5005F78B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B780DF026BB63A5005F78B9 /* AppDelegate.swift */; };
 		3B780DF326BB63A5005F78B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B780DF226BB63A5005F78B9 /* SceneDelegate.swift */; };
 		3B780DF526BB63A5005F78B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B780DF426BB63A5005F78B9 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0CB88D0FBFB5E0E468D3DF28 /* Pods_gacha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gacha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B75E3792706AC8800C6FD3A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		3B780DED26BB63A5005F78B9 /* gacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B780DF026BB63A5005F78B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B780DF226BB63A5005F78B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				3B780DF226BB63A5005F78B9 /* SceneDelegate.swift */,
 				3B780DF426BB63A5005F78B9 /* ViewController.swift */,
 				3B780DF626BB63A5005F78B9 /* Main.storyboard */,
+				3B75E3792706AC8800C6FD3A /* CollectionViewController.swift */,
 				3B780DF926BB63AA005F78B9 /* Assets.xcassets */,
 				3B780DFB26BB63AA005F78B9 /* LaunchScreen.storyboard */,
 				3B780DFE26BB63AA005F78B9 /* Info.plist */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B75E37A2706AC8800C6FD3A /* CollectionViewController.swift in Sources */,
 				3B780DF526BB63A5005F78B9 /* ViewController.swift in Sources */,
 				3B780DF126BB63A5005F78B9 /* AppDelegate.swift in Sources */,
 				3B780DF326BB63A5005F78B9 /* SceneDelegate.swift in Sources */,
