@@ -9,13 +9,18 @@ import UIKit
 import SwiftGifOrigin //gifを使用するためのライブラリ
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    
     
     //引いた回数を数えるカウンター
     var counter : Int = 0
+    //タイマー（アニメーション用）
+    var timer = Timer()
+    
+    let closedCapcel: UIImage = UIImage(named: "capcel")!
     
     //画像格納用の配列 64個
-    var gachaImageArray: [UIImage] = [
+    let gachaImageArray: [UIImage] = [
         UIImage(named: "isyoku")!,
         UIImage(named: "chunigirl")!,
         UIImage(named: "otaku")!,
@@ -171,7 +176,24 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.75) {
             self.capcelImageView.loadGif(name: "capcelgif2")
         }
+        
+        //DispatchQueue.main.asyncAfter(deadline: .now() + 3.75){
+            //self.fadeout(self.capcel)
+        //}
+        
     }
+    
+    //フェードアウトアニメーション機能
+    func fadeout(_ viewAnimate: UIView){
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn) {
+                    viewAnimate.alpha = 0
+                } completion: { (_) in
+                    UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn) {
+                        viewAnimate.alpha = 1
+                    }
+                }
+    }
+    
     
     
     //シェア機能
